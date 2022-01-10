@@ -8,7 +8,7 @@ const brApiSchema = require('../payloads/brApi-schema.json')
 
 
 describe('Test API Contract with Cypress', () => {
-    it('Request API', () => {
+    it('Validate BRApi schema', () => {
         GETAllData.GETApiData().then((response) => {
             const validate = ajv.compile(brApiSchema)
             const valid = validate(response.body)
