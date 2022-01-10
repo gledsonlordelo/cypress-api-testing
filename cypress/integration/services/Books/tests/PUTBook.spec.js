@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-
-import * as DELETEBook from "../requests/DELETEBooks.request"
 import * as GETBooks from "../requests/GETBooks.request"
 import * as POSTBooks from "../requests/POSTBooks.request"
 import * as PUTBooks from "../requests/PUTBooks.request"
