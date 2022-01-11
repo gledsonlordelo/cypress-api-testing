@@ -27,6 +27,7 @@ describe('Update Book', () => {
                 .should((respUpdateBook) => {
                     expect(respUpdateBook.status).to.eq(200)
                     expect(respUpdateBook.body.title).to.eq(updateBook.title)
+                    expect(respUpdateBook.body).deep.eq(updateBook)
                     expect(respUpdateBook).to.be.not.null
                 })
         })
