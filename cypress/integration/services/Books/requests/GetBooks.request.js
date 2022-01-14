@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 function allBooks() {
-    return cy.request({
+    return cy.api({
         method:'GET',
         url: "Books",
         failOnStatusCode: false

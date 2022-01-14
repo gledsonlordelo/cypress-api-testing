@@ -3,7 +3,7 @@
 const payloadUpdateBook = require('../payloads/update-book.json')
 
 function updateBook(idBook) {
-    return cy.request({
+    return cy.api({
         method: 'PUT',
         url: `Books/${idBook}`,
         headers: {

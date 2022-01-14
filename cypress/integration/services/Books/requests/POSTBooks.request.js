@@ -3,7 +3,7 @@
 const payloadAddBook = require('../payloads/add-book.json')
 
 function addBook() {
-    return cy.request({
+    return cy.api({
         method: 'POST',
         url: "Books",
         failOnStatusCode: false,

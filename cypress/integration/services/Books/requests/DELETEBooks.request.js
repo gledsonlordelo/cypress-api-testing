@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 function deleteBook(idBook) {
-    return cy.request({
+    return cy.api({
         method: 'DELETE',
         url: `Books/${idBook}`,
         failOnStatusCode: false
