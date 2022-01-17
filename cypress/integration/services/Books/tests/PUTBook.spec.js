@@ -27,6 +27,7 @@ describe('Update Book', () => {
                 })
         })
     });
+    
     it('Create and update book by ID', () => {
         POSTBooks.addBook().then((respAddBook) => {
             cy.log("Old TITLE: " + respAddBook.body.title)
