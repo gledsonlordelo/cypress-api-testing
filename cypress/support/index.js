@@ -20,4 +20,4 @@ import './commands'
 // require('./commands')
 
 //Import Cy.api
-import '@bahmutov/cy-api/support';
+import '@bahmutov/cy-api'

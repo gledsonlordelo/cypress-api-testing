@@ -31,7 +31,7 @@ describe('Update Book', () => {
             PUTBooks.updateBook(respAddBook.body.id)
                 .should((respUpdateBook) => {
                     expect(respUpdateBook.body).deep.eq(updateBook)
-                    validateRequest(resUpdateBook)
+                    validateRequest(respUpdateBook)
                 })
         })
     });
