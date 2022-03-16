@@ -1,20 +1,10 @@
-name: ci - API
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-
+name: API - End-to-end tests 🧪
+on: [push]
 jobs:
-  cypress-API-tests-ubuntu:
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome89-ff86
+  cypress-run:
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Run end-to-end tests on desktop viewport 🧪
+      - name: Cypress run
         uses: cypress-io/github-action@v2
-        with:
-          command: npm test   
