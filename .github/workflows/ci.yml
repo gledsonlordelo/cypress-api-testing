@@ -1,4 +1,13 @@
-name: End-to-end tests 🧪
+name: ci - API
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+
+name: API End-to-end tests 🧪
 on: [push]
 jobs:
   cypress-run:
@@ -8,3 +17,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        with:
+          command: npm test 
